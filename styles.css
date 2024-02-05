@@ -1,20 +1,25 @@
 :root {
-  --font-primary: 'comfortaa', sans serif;
+  --font-primary: 'comfortaa', sans-serif;
+  --font-secondary: 'raleway', sans-serif;
 
-  --font-weight-regular: 400;
-  --font-weight-bold:    700;
+  --font-weight-regular:  400;
+  --font-weight-semibold: 600;
 
   --color-selago: #EDE9FB;
 }
 
 body {
   background-color: var(--color-selago);
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   line-height: 1.5rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+}
+
 p {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   max-width: 32rem;
 }
 
@@ -24,11 +29,15 @@ p {
     padding-inline: 1rem;
 }
 
-.opening-hours {
-    display: grid;
-    grid-template-columns: 3rem 6rem;
+.info-section {
+    margin-bottom: 3rem;
 }
 
-.opening-hours__day {
-    font-weight: var(--font-weight-bold);
+.info-list {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+}
+
+.info-list__label {
+    font-weight: var(--font-weight-semibold);
 }
