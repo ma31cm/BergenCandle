@@ -40,6 +40,38 @@ p {
   margin-bottom: 3rem;
 }
 
+@media screen and (min-width: 50rem) {
+  .info-section {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .info-section:nth-child(even) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+
+.info-section__content-area {
+  margin-bottom: 2rem;
+}
+
+.info-section__image-area {
+  margin-inline: auto;
+  max-width: 30rem;
+}
+
+@media screen and (min-width: 50rem) {
+  .info-section__image-area {
+    margin: 0;
+    max-width: 20rem;
+  }
+}
+
+.info-section__image {
+  width: 100%;
+}
+
 .info-list {
   display: grid;
   grid-template-columns: 3rem 1fr;
