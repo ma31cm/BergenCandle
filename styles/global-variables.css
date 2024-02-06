@@ -1,0 +1,9 @@
+:root {
+  --font-primary: 'comfortaa', sans-serif;
+  --font-secondary: 'raleway', sans-serif;
+
+  --font-weight-regular:  400;
+  --font-weight-semibold: 600;
+
+  --color-selago: #EDE9FB;
+}

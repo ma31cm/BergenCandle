@@ -1,0 +1,16 @@
+body {
+  background-color: var(--color-selago);
+  font-family: var(--font-secondary);
+  line-height: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  max-width: 32rem;
+}
