@@ -1,9 +1,41 @@
 :root {
-  --font-primary: 'comfortaa', sans-serif;
-  --font-secondary: 'raleway', sans-serif;
+  --font-headings-sans: 'dreaming-outloud-sans', sans-serif;
+  --font-headings-script: 'dreaming-outloud-script', sans-serif;
+  --font-body: 'raleway', sans-serif;
 
   --font-weight-regular:  400;
   --font-weight-semibold: 600;
 
-  --color-selago: #EDE9FB;
+  --color-pink-shadow: #D98CB8;
+  --color-pink-dark:    #E3ABCB;
+  --color-pink-light: #F9E2EE;
+
+  --color-green-shadow: #7DC57E;
+  --color-green-dark:   #8CD98E;
+  --color-green-light: #DEF7DE;
+
+  --color-blue-shadow: #66A3CC;
+  --color-blue-dark:    #8CBAD9;
+  --color-blue-light: #DDEEF8;
+
+  --color-purple-shadow: #9585D6;
+  --color-purple-dark:  #AFA3E0;
+  --color-purple-light:  #E6E2F9;
+  --color-purple-background: #EDEAFB;
+
+  --color-orange-shadow: #DC8461;
+  --color-orange-dark:  #E4A186;
+  --color-orange-light: #F6DED5;
+
+  --color-yellow-shadow: #D9BE5E;
+  --color-yellow-dark:  #E4CF86;
+  --color-yellow-light: #F6EFD5;
+
+
+
+
+
+
+
+  --color-text: #333333;
 }

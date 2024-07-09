@@ -1,5 +1,7 @@
 @import url(styles/global-variables.css);
+@import url(styles/resets.css);
 @import url(styles/typography.css);
 @import url(styles/layouts.css);
+@import url(styles/themes.css);
 @import url(styles/components/components.css);
 @import url(styles/utilities.css);

@@ -1,16 +1,69 @@
 body {
-  background-color: var(--color-selago);
-  font-family: var(--font-secondary);
-  line-height: 1.5rem;
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.875rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-primary);
+@media screen and (min-width: 48rem) {
+  body {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
+h1 {
+  font-family: var(--font-headings-script);
+  font-size: 1.75rem;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media screen and (min-width: 48rem) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+h2, h3 {
+  font-family: var(--font-headings-sans);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.5;
   margin-bottom: 0.5rem;
 }
+
+h2::first-letter,
+h3::first-letter {
+  font-family: var(--font-headings-script);
+}
+
+
+h2 {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 48rem) {
+  h2 {
+    font-size: 6rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 48rem) {
+  h3 {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+}
+
 
 p {
   margin-bottom: 1.5rem;
   margin-top: 0;
-  max-width: 32rem;
+  max-width: 50rem;
 }

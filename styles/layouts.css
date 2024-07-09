@@ -1,5 +1,32 @@
-.l-container {
-  max-width: 75rem;
-  margin-inline: auto;
+.l-site {
+  margin: 0;
+}
+
+.l-site__header {
+  height: 7rem;
   padding-inline: 1rem;
+  position: fixed;
+  width: 100%;
+}
+
+.l-site__main {
+  padding-inline: 1rem;
+  padding-top: 7rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .l-site {
+    display: flex;
+  }
+
+  .l-site__header {
+    height: 100%;
+    width: 12rem;
+  }
+
+  .l-site__main {
+    padding-left: 17rem;
+    padding-right: 5rem;
+    padding-top: 0;
+  }
 }

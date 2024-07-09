@@ -1,0 +1,16 @@
+.logo {
+
+}
+
+.logo__ellipse {
+  fill: var(--color-purple-light);
+}
+
+.logo__house {
+  fill: var(--color-green-dark);
+}
+
+.logo__shadow {
+  fill: var(--color-green-shadow);
+}
+
