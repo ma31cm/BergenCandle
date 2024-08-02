@@ -1,0 +1,11 @@
+/// Strict map-get function that throws error if key is not valid
+/// @param {Map} $map - Map variable we want to get key from
+/// @param {String} $key - Key we want to get from the map
+@function map-get-strict($map, $key) {
+  @if map-has-key($map, $key) {
+    @return map-get($map, $key);
+  } @else {
+    @warn "ERROR: Specified index: `#{$key}` does not exist in the map";
+    @error "ERROR: Specified index does not exist in the mapping";
+  }
+}

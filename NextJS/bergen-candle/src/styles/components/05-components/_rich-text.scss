@@ -1,0 +1,22 @@
+.rich-text {
+
+  > h2 + h3,
+  > h3 + h4 {
+    margin-top: 0;
+  }
+
+  > p {
+    &:has(+ ul:not([class])) {
+      margin-bottom: math.div($margin-bottom-paragraph, 2);
+    }
+  }
+
+  ul:not([class]) {
+    list-style: revert;
+    margin-bottom: math.div($margin-bottom-paragraph, 2);
+    padding: revert;
+  }
+
+  ol:not([class]) {
+  }
+}

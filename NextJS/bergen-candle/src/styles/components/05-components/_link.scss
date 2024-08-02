@@ -1,0 +1,11 @@
+.link {
+  &--skip {
+    @include visibility-hidden;
+
+    &:focus {
+      height: auto;
+      position: static;
+      width: auto;
+    }
+  }
+}

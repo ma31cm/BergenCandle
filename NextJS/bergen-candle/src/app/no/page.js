@@ -1,7 +1,7 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import "../../styles/components/info-list.scss";
+import "../../styles/components/info-section.scss";
 
-export default function Home() {
+export default function Page() {
     return (
         <main className="l-site__main">
             <section className="info-section">

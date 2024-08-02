@@ -1,0 +1,12 @@
+.l-container {
+  padding-left: $gutter-sm;
+  padding-right: $gutter-sm;
+  margin: 0 auto;
+  max-width: $max-width-container + (2 * $gutter-md);
+  width: 100%;
+
+  @include medium-up {
+    padding-left: $gutter-md;
+    padding-right: $gutter-md;
+  }
+}

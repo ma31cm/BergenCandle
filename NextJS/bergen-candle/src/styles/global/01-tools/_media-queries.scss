@@ -1,0 +1,45 @@
+/*------------------------------------*/
+/*  #MEDIA-QUERIES
+/*------------------------------------*/
+
+// Breakpoints
+// -------------------------
+$medium-screen: 48rem; // 768px
+$large-screen:  64rem; // 1024px
+$xl-screen:     90rem; // 1440px;
+
+// -up
+// -------------------------
+@mixin medium-up {
+  @media screen and (min-width: #{$medium-screen}) {
+    @content;
+  }
+}
+
+@mixin large-up {
+  @media screen and (min-width: #{$large-screen}) {
+    @content;
+  }
+}
+
+@mixin xl-up {
+  @media screen and (min-width: #{$xl-screen}) {
+    @content;
+  }
+}
+
+// -down
+// -------------------------
+@mixin large-down {
+  @media screen and (max-width: #{$large-screen - 0.0625rem}) {
+    @content;
+  }
+}
+
+// -only
+// -------------------------
+@mixin small-only {
+  @media screen and (max-width: #{$medium-screen - 0.0625rem}) {
+    @content;
+  }
+}

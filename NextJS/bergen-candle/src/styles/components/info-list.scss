@@ -1,0 +1,10 @@
+.info-list {
+  display: grid;
+  gap: 0 1rem;
+  grid-template-columns: auto 1fr;
+  margin-top: 0.5rem;
+}
+
+.info-list__label {
+  font-weight: var(--font-weight-semibold);
+}

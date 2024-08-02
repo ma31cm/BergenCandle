@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    #LISTS
+\*------------------------------------*/
+
+// Generic list styling
+
+// Unordered lists
+ul {
+  @include list-reset;
+}
+
+// Ordered lists
+ol {
+}
+
+// Description lists
+dl {
+  dt {
+    font-weight: bold;
+  }
+  dd {
+  }
+}

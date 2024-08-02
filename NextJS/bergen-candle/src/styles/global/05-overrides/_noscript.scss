@@ -1,0 +1,28 @@
+/*------------------------------------*/
+/*  #NOSCRIPT
+/*------------------------------------*/
+
+/**
+ * Components to be shown when JS is disabled
+ */
+
+.noscript {
+
+  &__component {
+      display: none !important;
+      .noscript & {
+          display: block !important;
+          width: 100%;
+      }
+
+      & > *:last-child { margin-bottom: 0; }
+  }
+
+  // To hide content in case script isn't allowed
+  & &__hide { display: none !important; }
+
+  // Show toggle-able content
+  [data-toggle-element] {
+    display: block;
+  }
+}

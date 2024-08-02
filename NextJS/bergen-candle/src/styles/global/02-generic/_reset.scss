@@ -1,0 +1,57 @@
+// Reset some styles instead of everything with reset.css or normalize.css. 
+// Most browsers nowadays don't need a lot of resets.
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Improved, customizable focus styling by Stephanie Eckles */
+/* https://moderncss.dev/modern-css-for-dynamic-component-based-architecture/#css-reset-additions */
+:focus-visible {
+  --outline-size: max(2px, 0.15em);
+
+  outline: var(--outline-width, var(--outline-size)) var(--outline-style, solid)
+  var(--outline-color, currentColor);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+/* Scroll padding allowance above anchor links */
+:target {
+  scroll-padding-block-start: 2rem;
+}
+
+/* Scroll padding allowance below focused elements
+  to ensure they are clearly in view */
+:focus {
+  scroll-padding-block-end: 8vh;
+}
+
+
+

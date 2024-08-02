@@ -1,0 +1,37 @@
+/*------------------------------------*/
+/* #UTILITY-CLASSES
+/*------------------------------------*/
+
+/**
+ * Utility classes (single purpose classes that override defaults)
+ * Prefixed u-
+ */
+
+// Visible for screen readers only
+.u-hidden {
+  @include visibility-hidden();
+}
+
+// To create margin utility classes
+@mixin util-margin($direction, $count: 0, $mq: "base") {
+  @for $i from 0 through $count {
+    .u-mg-#{$direction}-#{$i} {
+      @if ($mq == "base") {
+        margin-#{$direction}: $base-spacing-unit * $i;
+      } @else if ($mq == "md-up") {
+        &#{-md-up} { @include medium-up { margin-#{$direction}: $base-spacing-unit * $i; } }
+      } @else if ($mq == "lg-up") {
+        &#{-lg-up}  { @include large-up { margin-#{$direction}: $base-spacing-unit * $i; } }
+      }
+    }
+  }
+}
+
+// Margin top/bottom util: .u-mg-top/bottom-x
+@include util-margin("top", 10);
+@include util-margin("top", 10, "md-up");
+@include util-margin("top", 10, "lg-up");
+@include util-margin("bottom", 10);
+@include util-margin("bottom", 10, "md-up");
+@include util-margin("bottom", 10, "lg-up");
+
